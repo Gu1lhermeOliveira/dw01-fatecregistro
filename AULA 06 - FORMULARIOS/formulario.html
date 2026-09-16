@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Cadastro de Alunos - Curso DSM</title>
+  </head>
+
+  <body>
+    <h1>Cadastro de Alunos - Curso DSM</h1>
+    <p>
+      Formulario de cadastro para termos uma nova base de dados relacionado aos
+      novos estudantes:
+    </p>
+    <form action="#" method="post">
+      <!-- Primeiro Bloco de Dados Pessoais -->
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="nome">Nome:</label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          placeholder="Insira seu nome"
+          required
+        /><br /><br />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Insira seu email"
+          required
+        /><br /><br />
+        <label for="nasc">Data de Nascimento:</label>
+        <input type="date" id="nasc" name="nasc" /><br /><br />
+      </fieldset>
+      <br />
+
+      <!-- Segundo Bloco de Dados Acadêmicos -->
+      <fieldset>
+        <legend>Dados Acadêmicos</legend>
+        <label for="cursos">Cursos:</label>
+        <!-- Lista de Seleção de Cursos -->
+        <select id="cursos" name="cursos">
+          <option value="cursos" id="cursos">Selecione um curso</option>
+          <option value="dsm">
+            Desenvolvimento de Software Multiplataforma
+          </option>
+          <option value="redes">Analise e Desenvolvimento de Sistemas</option>
+          <option value="seguranca">Outros</option></select
+        ><br /><br />
+
+        <!-- Seleção de Período por meio do input radio -->
+        <label for="periodo">Periodo:</label>
+        <input type="radio" name="periodo" id="manha" value="manha" /> Manhã
+        <input type="radio" name="periodo" id="noite" value="noite" />
+        Noite<br /><br />
+
+        <label for="observacoes">Observações:</label><br /><br />
+        <textarea
+          id="observacoes"
+          name="observacoes"
+          placeholder="Insira suas observações"
+        ></textarea
+        ><br /><br />
+
+        <!-- Botões -->
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

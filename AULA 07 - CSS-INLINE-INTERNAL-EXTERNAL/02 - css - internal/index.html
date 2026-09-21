@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Interno</title>
+    <!-- Aqui vai o CSS internal -->
+    <style>
+      p {
+        color: #f87575;
+        font-size: 19px;
+      }
+
+      /* . atribui uma classe ao elemento */
+      .destaque {
+        background-color: #125096;
+        color: #ffffff;
+        padding: 10px;
+        border-left: 4px solid orange;
+      }
+
+      #principal {
+        border: 2px solid orange;
+        padding: 20px;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Demonstração do CSS Internal</h1>
+    <p>
+      Este parágrafo é estilizado <br />
+      através do CSS internal, definido no head
+    </p>
+
+    <p class="destaque">
+      Este paragráfo possui uma classe "Destaque" e recebe estilos específicos
+    </p>
+
+    <section id="principal">
+      <h2 style="color: blue">Seção Principal</h2>
+      <p style="color: blue">
+        Esta seção possui o ID "principal" é estilizada de forma única
+      </p>
+    </section>
+  </body>
+</html>

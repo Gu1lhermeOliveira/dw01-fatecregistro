@@ -1,0 +1,56 @@
+/* Este é um arquivo de estilo CSS externo */
+
+body{
+    background-color: #30302e;
+    color: white;
+    font-family: "Segoe UI";
+    /* Padding: espaço interno */
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #8cc9e4;
+    font-size: 32px;
+    text-align: center;
+    /* Espaçamento inferior */
+    padding-bottom: 15px;
+    /* Borda inferior */
+    border-bottom: 3px solid #8cc9e4;
+}
+
+/* Div com classe */
+div.container {
+    background-color: #3a3a38;
+    padding: 20px;
+    border-radius: 10px;
+    /* cada valor no atributo margin significa: topo, direita, fundo, esquerda */
+    margin: 20px 0;
+}
+
+/* Div com ID */
+div#exemplo {
+border: 2px solid #8cc9e4;
+padding: 15px;
+margin-top: 20px;
+}
+
+
+/* o efeito de "hover" é aplicado quando o mouse passa sobre um elemento */
+button#btnHover {
+    width: 300px;
+    height: 60px;
+    border: 3px solid #8cc9e4;
+    background-color: #343438;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    /* Controlando as transições */
+    transition: all 0.3s ease;  
+}
+
+button#btnHover:hover {
+    background-color: #8cc9e4;
+    transform: scale(0.9);
+    color: #343438;
+}

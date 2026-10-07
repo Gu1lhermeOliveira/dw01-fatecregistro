@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 250px;
+  padding: 20px;
+  background-color: #30302e;
+  margin: 10px;
+}
+
+.card {
+  background-color: aqua;
+  padding: 20px;
+  margin: 5px;
+  color: #30302e;
+}
+
+.row-center {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.column-left {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.row-space-between {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row-space-around {
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-wrap {
+  flex-direction: row;
+  /* Ativa Quebra de linha no flexbox */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardMaior {
+  width: 100px;
+}
+
+.row-center2 {
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  height: 50px;
+}
+
+.row-center3 {
+  height: 400px;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  /* posições 
+left: esquerda
+right: direita
+flex-start: superior
+flex-end: inferior */
+}
+
+.row-center4 {
+  height: 400px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row-center5 {
+  height: 400px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}

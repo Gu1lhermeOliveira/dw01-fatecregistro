@@ -1,0 +1,18 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
+}
+
+body{
+    background-color: #1010a5e3;
+    color: white;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h1.titulo{
+    color: #C2BDCB;
+    text-align: center;
+}

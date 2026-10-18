@@ -1,75 +1,94 @@
-<!doctype html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Meu Portifólio</title>
-  </head>
-  <body>
-    
-    <header>
-      <h1 class="titulo">Meu Portifólio Inicial</h1>
-      <h2>
-        Me chamo Guilherme, tenho 24 anos e Moro atualmente estudo na FATEC no
-        Curso de Desenvolvimentod e Software Multiplataforma, estou aprimorando
-        minhas habilidades em HTML, CSS3 e JAVA SCRIPT.
-      </h2>
-      <p>
-        Este Site tem por objetivo mostrar quem sou Eu e minhas principais
-        habilidades.
-      </p>
-    </header>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfólio | Guilherme Oliveira</title>
+
+  <!-- Fontes Utilizadas no Projeto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS external -->
+  <link rel="stylesheet" href="style.css">
 
 
-    <main>
-      <!-- Sobre Mim -->
-      <section>
-        <h3 id="sobre-mim">Sobre MIM</h3>
+<!-- CSS INTERNAL - USADO PARA ESTILIZAR O H2 DO CABEÇALHO  -->
+<style>
+  header h2{
+    margin-top: 80px;
+    font-family: 'sedgwick ave display', cursive;
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: 0.8px; /* Espaçamento entre letras */
+    color: #a3e635; /* Cor do texto */
+  }
+</style>
+</head>
+
+<div class="container">
+  <header class="topo">
+    <h1>Meu Portfólio Inicial</h1>
+    <h2>DESENVOLVEDOR DE SOFTWARE EM CONSTRUÇÃO</h2>
+    <!-- CSS inline - USADO PARA ESTILIZAR O P DO CABEÇALHO -->
+  <p style="max-width: 1380px; margin-top: 15px;">
+    Bem-vindo ao meu espaço de projetos. Esta página foi desenvolvida para consolidar meus
+    aprendizados práticos em HTML5 e CSS3, explorando conceitos de estruturação, seletores
+    e estilização limpa.
+  </p>
+  </header>
+
+  <main>
+    <section class="sobre">
+      <img src="images/guilherme.png" alt="Foto de Guilherme Oliveira" class="foto">
+      <div>
+        <h3 id="titulo-sobre">sobre mim</h3> <!--Estilizando pelo id-->
         <p>
-          Possuo Fortes habilidades em Banco de Dados e Gosto muito de PowerBi e
-          Corinthians
+           Olá! Meu nome é Guilherme. Sou estudante de Desenvolvimento de Software Multiplataforma na Fatec Registro e sou apaixonado por criar soluções
+          digitais, e resolver problemas com o Auxílio da Tecnologia.
         </p>
-        <ul class="sobre-mim">
-          <li>PowerBi</li>
-          <li>HTML5</li>
-          <li>CSS 3</li>
-        </ul>
-      </section>
+        <ul class="lista-sobre"> <!--Estilizando pela classe-->
+          <li>Estudante de Desenvolvimento de Software Multiplataforma.</li>
+          <li>Apaixonado por interfaces modernas e minimalistas.</li>
+          <li>Foco em código Limpo e Organizado.</li>
+      </div>
+    </section>
 
-      <!-- Habilidades -->
-      <section>
-        <h3>HABILIDADES</h3>
-        <div class="habilidade">
-          <div class="div-habilidade">
-            <h4>HTML</h4>
-            <p>Linguagem de Marcação sendo o alicerce de um WebSite Moderno.</p>
-          </div>
-          <div class="div-habilidade">
-            <h4>CSS3</h4>
-            <p>Linguagem de Marcação sendo o alicerce de um WebSite Moderno.</p>
-          </div>
-          <div class="div-habilidade">
-            <h4>JAVA-SCRIPT</h4>
-            <p>Linguagem de Marcação sendo o alicerce de um WebSite Moderno.</p>
-          </div>
-        </div>
-      </section>
+    <section class="habilidades">
+      <h3 class="titulo-habilidades">Habilidades</h3>
       
-      <!-- Campo para contato -->
-        <section>
-            <h2>Contato</h2>
-            <input type="email" name="email" id="email" placeholder="Deixe seu e-mail para contato.">
-            <button>Enviar</button>
-        </section>
-    </main>
+      <div class="habilidade">
+        <h4>Front-End</h4>
+        <p>Desenvolvimento de Estruturas robustas e semânticas com HTML5 e Layouts Responsivos utilizando CSS3.</p>
+      </div>
 
-    <footer>
-  <p>Site Desenvolvido Por Guilherme Dias de Oliveira</p>
-</footer>
+       <div class="habilidade">
+          <h4>DataBases</h4>
+          <p>Conhecimento em estruturas de bancos de dados relacionais, criação de entidades, relacionamentos e consultas SQL.</p>
+        </div>
 
+         <div class="habilidade">
+          <h4>UI/UX Design</h4>
+          <p>Criação de componentes visuais, cartões interativos e alinhamentos estéticos focados na experiência do usuário.</p>
+        </div>
+    </section>
 
+    <section class="contato">
+      <form action="#" class="contato" method="post">
+        <h3>Contato</h3>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+        <button type="submit" href="https://github.com/GuilhermeOliveira">Enviar</button>
+      </form>
+    </section>
+  </main>
 
+  <footer class="rodape">
+    <p>&copy; Desenvolvido por Guilherme Oliveira. Fatec DSM-1</p>
+  </footer>
 
-  </body>
-</html>
+  </div>
+  </html>
